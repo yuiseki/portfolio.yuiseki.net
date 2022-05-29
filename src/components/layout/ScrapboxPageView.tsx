@@ -19,7 +19,7 @@ export const ScrapboxPageView: React.FC<{
       <Lines lines={lines} />
       <footer>
         <div>
-          Scrapboxで編集 :{" "}
+          Source:{" "}
           <Link
             href={
               "https://scrapbox.io/" +
@@ -29,15 +29,7 @@ export const ScrapboxPageView: React.FC<{
             }
           >
             <a target="_blank" rel="noreferrer">
-              {process.env.scrapboxProject}/{rawTitle}
-            </a>
-          </Link>
-        </div>
-        <div>
-          GitHubで使う :{" "}
-          <Link href="https://github.com/yuiseki/scrapbox-nextjs-template">
-            <a target="_blank" rel="noreferrer">
-              yuiseki/scrapbox-nextjs-template
+              https://scrapbox.io/{process.env.scrapboxProject}/{rawTitle}
             </a>
           </Link>
         </div>
